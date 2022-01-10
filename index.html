@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+      <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Weather Dashboard</title>
 </head>
-<body>
-    
+<body class="flex-column min-100-vh">
+    <header class="hero">
+        <h1 class="title">Weather Dashboard</h1>
+    </header>
+
+    <main class="container">
+        <div class="row">
+        <div class="col-xs-6">
+            <div class="card">
+                <h2 class="card-header">Search by City</h2>
+                <form id="user-form" class="card-body">
+                    <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+                    <button type="submit" class="btn">Search</button>
+                </form>
+                <ul id="cities">
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-xs-6 showDaily">
+            <h2 class="subtitle">Current Weather For: <span id="city-search"></span><span id="today"></span></h2>
+            <div id="display-container" class="list-group showDaily"></div>
+            <p> Temperature: <span id="temp"></span></p>
+            <p> Wind: <span id="wind"></span></p>
+            <p> Humidity: <span id="humid"></span></p>
+            <p> UV Index: <span id="uvi"></span></p>
+        </div>
+    </div>
+        <div>
+            <h3>Five Day Forecast</h3>
+            <div class="forecasts row">
+            </div>
+        </div>
+        
+    </main>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      <script src="./assets/js/script.js"></script>
 </body>
 </html>

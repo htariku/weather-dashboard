@@ -1,0 +1,43 @@
+
+*/ {
+  font-family: 'Oswald', sans-serif;
+}
+.hero {
+  background-color: rgba(41, 3, 51, 0.911);
+}
+
+.title {
+  color: white;
+  text-align: center;
+}
+
+.fav {
+  color: green;
+}
+
+.mod {
+  color: orange;
+}
+
+.severe {
+  color: red;
+}
+
+.btn {
+  background-color:  rgba(186, 167, 194, 0.397);
+}
+
+.otherbtn {
+  background-color: rgba(186, 167, 194, 0.397);
+  border-radius: 18px;
+  width: 150px;
+  text-align: center;
+}
+
+.showDaily {
+  padding-left: 40px;
+}
+
+ul {
+  list-style-type: none;
+}
